@@ -1,0 +1,329 @@
+/* CSS Document */
+
+body {
+    background-color: #fafafa;
+}
+
+.rewards {
+    border-left: 1px solid orange;
+    border-top: 2px solid orange;
+    height: 520px;
+    padding: 0px;
+}
+
+.awards-text {
+    text-align: justify;
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+}
+
+
+
+
+
+
+.heading {
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    background-color: #fccc48;
+}
+
+
+.program .card-panel {
+    padding-bottom: 5px;
+}
+
+.slider {
+    margin: 0px;
+    padding: 0px;
+    border-top: 2px solid orange;
+}
+
+.justify {
+    padding: 10px;
+}
+
+.justify p {
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+#brand-logo2 {
+    margin-top: 6px;
+}
+
+.event-list p {
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.event-list .divider {
+    margin-top: 10px;
+}
+
+.header {
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+
+/*owl */
+
+#owl-demo .item {
+    margin: 3px;
+}
+
+#owl-demo .item img {
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+
+
+/*Prncipal desk*/
+
+.navbar-fixed {
+    z-index: 1000;
+}
+
+.img-box {
+    height: 200px;
+    width: 170px;
+    overflow: hidden;
+}
+
+.faculty .card-content {
+    height: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.faculty .card-content p {
+    text-align: center;
+    height: 30px;
+    margin: 0px;
+    padding: 2px;
+}
+
+.valign-wrapper {
+    background: white;
+    /* For browsers that do not support gradients */
+}
+
+.box {
+    text-align: justify;
+}
+
+.bottom-border {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 6px solid orange;
+}
+
+
+/*
+.show-on-ext-large
+{
+	width:1300px;
+}
+
+
+#top_div {
+    height: 6px;
+    background-color: rgba(227, 54, 54, 1);
+}
+
+
+
+.blue {
+    background-color: #e64238!important;
+}
+*/
+
+.row1 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+.materialboxed {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.card-panel p {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+/*ul {
+  list-style:none;
+  font-family:'Trebuchet MS';
+  font-size:17px;
+  text-align:center;
+  margin-top:20px;
+}
+
+li {
+  position:relative;
+  display:inline;
+}
+
+
+
+li a {
+  text-decoration:none;
+  color:#333;
+  display:inline-block;
+  padding:10px;
+}
+
+span {
+  display:block;
+  width:calc(100% - 23px);
+  height:2px;
+  background:#0088CC;
+  position:absolute;
+  left:10px;
+  bottom:-10px;
+}
+
+li a:hover {
+ 	color:#0088CC;
+}
+
+li a:hover ~ span {
+ 	 animation:ul 0.3s ease-out;
+   background:#333;
+}
+
+@keyframes ul {
+ 	0% { 
+    width:0;
+  }
+  100% { 
+    width:calc(100% - 23px);
+  }
+}*/
+
+@media (min-width: 993px) {
+    main {
+        margin-left: 10px;
+    }
+}
+
+.dropdown-content {
+    overflow: visible !important;
+}
+
+
+/* card panel nav */
+
+.card-nav {
+    margin: 0px;
+    padding: 0px;
+}
+
+@media only screen and (max-width: 500px) {
+    #brand-logo2 {
+        margin-left: 5px;
+    }
+    .header {
+
+        font-size: 18px;
+    }
+    .card1,
+    .card2 {
+        margin-top: 10px;
+    }
+    .card2>h5 {
+        text-align: center;
+    }
+    .img-box {
+        margin: 0px;
+        height: 250px;
+        width: 200px;
+        overflow: hidden;
+    }
+    .card-image {
+        margin: 0px;
+    }
+    /*Principal chairman desk*/
+    .bottom {
+        position: absolute;
+        bottom: 10px;
+        right: 5px;
+    }
+    
+    
+.heading {
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    background-color: #fccc48;
+}
+
+    
+}
+
+
+
+
+/*image background*/
+
+#backgroundImage:before{
+    position: fixed;
+content: "";
+    z-index: -6;
+    height: 100%;
+    width: 100%;
+    background-size:100%;
+    background: url("http://www.vikascollege.co.in/website/img/library_img.jpg") no-repeat fixed center center;
+    top:0;
+    bottom: 0;
+    left:0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+
+.main{
+    opacity: 1;
+    height: 100%;
+    filter:alpha(opacity=100);
+}
+
+
+
+/*Map*/
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}

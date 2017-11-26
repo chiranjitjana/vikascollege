@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<!-- FAVICON AND APPLE TOUCH -->
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="180x180"
+		  href="apple-touch-180x180.png" />
+	<meta charset="utf-8">
+	<title>Vikas College</title>
+
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet"
+		  href="{{URL::asset('website/css/materialize.min.css')}}">
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons"
+		  rel="stylesheet">
+	<link href="{{URL::asset('website/css/owl.carousel.css')}}"
+		  rel="stylesheet" type="text/css">
+	<link href="{{URL::asset('website/css/header.css')}}" rel="stylesheet">
+	<link href="{{URL::asset('website/css/animate.css')}}" rel="stylesheet">
+	<link href="{{URL::asset('website/css/style.css')}}" rel="stylesheet">
+	<link href="{{URL::asset('website/css/animate.css')}}">
+
+	<style type="text/css">
+		.active1 {
+			background-color: #0AC152;
+			color: #fff;
+			border-radius: 5px;
+		}
+	</style>
+
+	<script>
+
+        function a_onClick(idClicked,maxClicked){
+
+
+            for(var start=1;start<=maxClicked;start++)
+            {var localId="li"+start;
+                console.log(localId);
+
+                if(start!=idClicked){
+                    $("."+localId).hide();
+                    $("#"+start).removeClass("active");
+                }else
+                {
+                    $("."+localId).show();
+                    $("#"+idClicked).addClass("active");
+
+                }
+            }
+
+        }
+
+
+	</script>
+	<style>
+input[type=text] {
+	width: 30%;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: white;
+	background-image: url('{{URL::asset('website/img/searchicon.png ')}}');
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	padding: 12px 20px 12px 40px;
+	/* -webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out; */
+}
+
+/* input[type=text]:focus {
+	width: 40%;
+} */
+</style>
+	
+
+</head>
+
+<body style="min-width: 340px;">
+
+
+<div class="container-fluid z-depth-1">
+
+
+	<div class="hide-on-med-and-down row valign-wrapper" id="logo"
+		 style="padding: 0px; margin: 0px;">
+		<div class="hide-on-med-and-down row valign-wrapper" id="logo"
+			style="padding: 0px; margin: 0px;">
+			<div class="col s12  m8 l4 offset-m1 offset-l1">
+				<img class="responsive-img"
+					src="{{URL::asset('website/img/logo1.png')}}" alt="" />
+			</div>
+
+			<input type="text" name="search" placeholder="Search.."
+				calss="col s10  m6 "
+				style="margin-top: 20px; border-color: background-color: #f44336;">
+
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<button class="btn btn-primary"
+				style="height: 43px; background-color: #f44336;">Login</button>
+
+		</div>
+
+	</div>
+
+
+	<div id="nav">
+		<nav class="red z-depth-0">
+			<div class="container">
+				<div class="nav-wrapper">
+
+					<a href="#" data-activates="mobile-demo" class="button-collapse"><i
+								class="material-icons">menu</i></a>
+					<ul class="right hide-on-med-and-down">
+						<li id="li1" {{{ (Request::is('/') ? 'class=active
+								' : '') }}} style="height: 65px"><a href="/"
+								style="height: 65px"><img alt="Home"
+									src="{{URL::asset('website/img/home-icon-md.png')}}"
+									height="28px" width="34px"
+									style="padding: 2px; margin-top: 15px;"></a></li>
+						<li data-hover="true" data-activates="about"
+							data-constrainwidth="false"
+							@if(Request::is('about*'))
+							class='dropdown-button active'
+							@else class='dropdown-button' @endif id="li2"><a href="/about">About
+								Us</a></li>
+						<li id="li3"
+							@if(Request::is('gallery*'))
+							class='dropdown-button active'
+							@else class='dropdown-button' @endif><a href="/gallery">Gallery</a><span></span></li>
+						<li data-hover="true" data-activates="academic"
+							data-constrainwidth="false" id="li4"
+							@if(Request::is('academic*'))
+							class='dropdown-button active'
+							@else class='dropdown-button' @endif><a href="/academic">Academics</a></li>
+						<li data-hover="true" data-activates="admission"
+							data-constrainwidth="false" id="li5"
+							@if(Request::is('admission*'))
+							class='dropdown-button active'
+							@else class='dropdown-button' @endif><a href="/admission">Admission</a></li>
+						<li data-hover="true" data-activates=""
+							data-constrainwidth="false" id="li6"
+							@if(Request::is('library*'))
+							class='dropdown-button active'
+							@else class='dropdown-button' @endif><a href="/library">Library</a><span></span></li>
+						<li data-hover="true" data-activates=""
+							data-constrainwidth="false" id="li7"
+							@if(Request::is('facility*'))
+							class='dropdown-button active'
+							@else class='dropdown-button' @endif><a href="/facility">Facility</a></li>
+						<li data-hover="true" data-activates="#"
+							data-constrainwidth="false" id="li8"
+							@if(Request::is('activity*'))
+							class='dropdown-button active'
+							@else class='dropdown-button' @endif><a href="/activity">Activity</a></li>
+						<li data-hover="true" data-activates="updates"
+							data-constrainwidth="false" id="li9"
+							@if(Request::is('updates*'))
+							class='dropdown-button active'
+							@else class='dropdown-button' @endif><a href="/updates">Updates</a></li>
+						<li id="li10"
+							@if(Request::is('contact*'))
+							class='dropdown-button active'
+							@else class='dropdown-button' @endif><a href="/contact">Contact Us</a><span></span></li>
+						<li id="li11"><a href="#">Login</a><span></span></li>
+					</ul>
+
+					<ul class="side-nav" id="mobile-demo">
+						<input type="text" name="search" placeholder="Search.."
+								calss="col s10  m6 "
+								style="margin: 5px; border-color: background-color: #f44336; width: 90%; color: #000;">
+					
+						<li {{ (Request::is('/') ? 'class=active' : '') }}><a href="/">Home</a><span></span></li>
+						<li
+								@if(Request::is('about*'))
+								class='dropdown-button active'
+								@else class='dropdown-button' @endif><a href="/about">About Us</a><span></span></li>
+						<li
+								@if(Request::is('gallery*'))
+								class='dropdown-button active'
+								@else class='dropdown-button' @endif><a href="/gallery">Gallery</a><span></span></li>
+						<li
+								@if(Request::is('academic*'))
+								class='dropdown-button active'
+								@else class='dropdown-button' @endif><a href="/academic">Academic</a><span></span></li>
+						<li
+								@if(Request::is('admission*'))
+								class='dropdown-button active'
+								@else class='dropdown-button' @endif><a href="/admission">Admission</a><span></span></li>
+						<li
+								@if(Request::is('library*'))
+								class='dropdown-button active'
+								@else class='dropdown-button' @endif><a href="/library">Library</a><span></span></li>
+						<li
+								@if(Request::is('updates*'))
+								class='dropdown-button active'
+								@else class='dropdown-button' @endif><a href="/updates">Updates</a><span></span></li>
+						<li
+								@if(Request::is('facility*'))
+								class='dropdown-button active'
+								@else class='dropdown-button' @endif><a href="/facility">Facility</a><span></span></li>
+						<li
+								@if(Request::is('activity*'))
+								class='dropdown-button active'
+								@else class='dropdown-button' @endif><a href="/activity">Activity</a><span></span></li>
+						<li @if(Request::is('contact*'))
+								class='dropdown-button active'
+							@else class='dropdown-button' @endif><a href="/contact">Contact</a><span></span></li>
+						<li><a href="#">Login</a><span></span></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+	</div>
+</div>
+
+
+
+
+
+<!-- Dropdown Structure -->
+<ul id="about" class="dropdown-content" style="margin-top: 60px;">
+	<li><a href="/about/history">History</a></li>
+	<li class="divider" />
+	<li><a href="/about/vision">Goals and objectives</a></li>
+	<li class="divider" />
+	<li><a href="/about/principal">From Principal Desk</a></li>
+	<li class="divider" />
+	<li><a href="/about/chairman">From Chairman Desk</a></li>
+	<li class="divider" />
+	<li><a href="/about/committee">Committees</a></li>
+	<li class="divider" />
+	<li><a href="/about/alumini">Alumini</a></li>
+</ul>
+
+<!-- Dropdown Structure -->
+<ul id="academic" class="dropdown-content" style="margin-top: 60px;">
+	<li><a href="/academic">Academic</a></li>
+	<li class="divider"></li>
+	<li><a href="/academic/courses">Courses</a></li>
+	<li class="divider"></li>
+	<li><a href="/academic/departments">Departments</a></li>
+	<li class="divider"></li>>
+	<li class="divider"></li>
+	<li><a href="#!">Examination</a></li>
+	<li class="divider"></li>
+	<li><a href="#">Academic Calender</a></li>
+
+</ul>
+
+<ul id="admission" class="dropdown-content" style="margin-top: 60px;">
+	<li><a href="/admission/attendence">Attendance</a></li>
+	<li class="divider"></li>
+	<li><a href="/admission/character">Character Building</a></li>
+	<li class="divider"></li>
+	<li><a href="/admission/general_rule">General Instructions</a></li>
+	<li class="divider"></li>
+	<li><a href="/admission/refund_of_fees">Refund of Fees</a></li>
+</ul>
+
+
+
+<!-- Dropdown Structure -->
+<ul id="updates" class="dropdown-content" style="margin-top: 60px;">
+	<li><a href="">Notice</a></li>
+	<li class="divider"></li>
+	<li><a href="">Events</a></li>
+	<li class="divider"></li>
+	<li><a href="">News</a></li>
+	<li class="divider"></li>
+	<li><a href="">Placement Cell</a></li>
+</ul>
+
+<ul id="facility" class="dropdown-content" style="margin-top: 60px;">
+	<li><a href="facility.html">Facility</a></li>
+	<li class="divider"></li>
+	<li><a href="activity.php">Sport Activity</a></li>
+	<li class="divider"></li>
+	<li><a href="library.html">Library</a></li>
+	<li class="divider"></li>
+	<li><a href="#!">Magzines &amp; Reaserch</a></li>
+</ul>
+
+
+<ul id="sublibrary" class="dropdown-content">
+	<li><a href="#!">Activity</a></li>
+	<li class="divider"></li>
+	<li><a href="#!">Library</a></li>
+
+</ul>

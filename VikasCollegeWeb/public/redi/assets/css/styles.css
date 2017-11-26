@@ -1,0 +1,294 @@
+div.card{
+  margin:5px;
+  border:5px;
+  border-radius:5px;
+  background:#fff;
+  z-index:100;
+}
+
+img.circle.responsive.img{
+  margin:10px;
+  align-content:center;
+}
+
+div.jumbotron{
+  border:1px solid #ffcc66;
+  margin-top:20px;
+}
+
+p.about{
+  height:auto;
+  padding:10px;
+}
+
+div.container-fluid.footer{
+  padding-left:0px;
+}
+
+div.row.slider{
+  margin-top:70px;
+}
+
+div#about.container{
+  margin-top:30px;
+}
+
+img#chairperson.center-block{
+  margin:10px;
+}
+
+div#faculty.container{
+  margin-top:50px;
+}
+
+div#footer.container-fluid{
+  padding-left:0px;
+  padding-right:0px;
+}
+
+img#faculty-img.img-circle.center-block{
+  margin-bottom:10px;
+}
+
+p#faculty-name.lead{
+  text-align:center;
+  font-weight:bold;
+}
+
+p#faculty-degree.lead{
+  text-align:center;
+}
+
+img.img-circle.faculty-img.center-block{
+  margin-bottom:10px;
+}
+
+p.lead.faculty-name{
+  text-align:center;
+  font-weight:bold;
+}
+
+p.lead.faculty-degree{
+  text-align:center;
+}
+
+h1.heading{
+  text-align:center;
+}
+
+div#about-img.container{
+  margin-top:60px;
+}
+
+div#about-img.container-fluid{
+  margin-top:60px;
+}
+
+img.header-img{
+  width:100%;
+  height:340px;
+}
+
+footer{
+  background-color:#0c1a1e;
+  min-height:220px;
+  font-family:'Open Sans', sans-serif;
+}
+
+div.col-md-5.col-sm-12.footerleft{
+  margin-top:50px;
+  padding:0 36px;
+}
+
+div.logofooter{
+  margin-bottom:10px;
+  font-size:25px;
+  color:#fff;
+  font-weight:700;
+}
+
+.footerleft p{
+  color:#fff;
+  font-size:12px !important;
+  font-family:'Open Sans', sans-serif;
+  margin-bottom:15px;
+}
+
+.footerleft p i{
+  width:20px;
+  color:#999;
+}
+
+.paddingtop-bottom{
+  margin-top:50px;
+}
+
+.footer-ul{
+  list-style-type:none;
+  padding-left:0px;
+  margin-left:2px;
+}
+
+.footer-ul li{
+  line-height:29px;
+  font-size:12px;
+}
+
+.footer-ul li a{
+  color:#a0a3a4;
+  transition:color 0.2s linear 0s, background 0.2s linear 0s;
+}
+
+.footer-ul li i{
+  margin-right:10px;
+}
+
+.footer-ul li a:hover{
+  transition:color 0.2s linear 0s, background 0.2s linear 0s;
+  color:#ff670f;
+}
+
+div.copyright{
+  min-height:40px;
+  background-color:#000000;
+}
+
+.copyright p{
+  text-align:left;
+  color:#FFF;
+  padding:10px 0;
+  margin-bottom:0px;
+}
+
+h3.heading7{
+  font-size:21px;
+  font-weight:700;
+  color:#d9d6d6;
+  margin-bottom:22px;
+}
+
+ul.bottom_ul{
+  list-style-type:none;
+  float:right;
+  margin-bottom:0px;
+}
+
+.bottom_ul li{
+  float:left;
+  line-height:40px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+    color: #fff;
+    background-color: #158cba;
+}
+
+.dropbtn {
+    background-color: #000;
+    color: white;
+    padding: 16px;
+
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #158cba}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #158cba;
+}
+
+
+
+.bottom_ul li:after{
+  content:/";
+  color:#FFF;
+  margin-right:8px;
+  margin-left:8px;
+}
+
+.bottom_ul li a{
+  color:#FFF;
+  font-size:16px;
+}
+
+h2#alt-logo{
+  color:#fff;
+}
+
+nav.navbar.navbar-inverse.navbar-fixed-top{
+  background-color:#000;
+}
+
+div.container-fluid.margin-nav{
+  margin-top:50px;
+}
+
+h1#notice-heading{
+  margin-top:70px;
+  text-align:center;
+}
+
+h2#notice-heading{
+  margin-top:70px;
+  text-align:center;
+}
+
+a.btn.btn-primary.more-btn{
+  align-content:center;
+}
+
+img.img-circle.img{
+  align-content:center;
+}
+
+a.tab-link{
+  text-decoration:none;
+  color:#000;
+}
+
+a.tab-link{
+  color:#000;
+}
+
+li.active a{
+}
+
+li.active a{
+  color:#fff;
+  text-decoration:blink;
+}
+
+body{
+}
+

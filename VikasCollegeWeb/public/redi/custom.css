@@ -1,0 +1,113 @@
+/*body*/
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #daeaf1;
+}
+
+/*navbar background*/
+nav.navbar.navbar-inverse.navbar-fixed-top {
+    background-color: #da2014;
+}
+
+/*navbar border*/
+.navbar {
+    border-width: 0 1px 1px 0px;
+}
+
+/*brand text*/
+.navbar-inverse .navbar-link {
+    color: #ffffff;
+}
+
+/*menu text color*/
+.navbar-inverse .navbar-nav>li>a {
+    color: #f9f9f9;
+}
+
+/*accordion nav*/
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+    color: #ffffff;
+    background-color: #158cba;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+
+/*jumbotron*/
+div.jumbotron {
+    border: 1px solid #ff7b07;
+    margin-top: 40px;
+}
+
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: #000000;
+    background-color: #c1dde8;
+}
+
+.btn {
+    padding: 9px 12px 7px;
+    border-width: 0 1px 4px 1px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #0f4b63;
+    border-color: #127ba3;
+}
+
+@media screen and (min-width: 768px){
+.container .jumbotron, .container-fluid .jumbotron {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+}
+
+
+/*footer title */
+.text-muted {
+    color: #f7f3f3;
+}
+
+/*mail*/
+a {
+    color: #f2f4f5;
+    text-decoration: none;
+}
+
+/*general links*/
+h3.heading7 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 22px;
+}
+
+.footer-ul li a {
+    color: #ffffff;
+    transition: color 0.2s linear 0s, background 0.2s linear 0s;
+}
+
+h1{
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Ubuntu', sans-serif;
+}

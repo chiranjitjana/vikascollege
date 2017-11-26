@@ -1,0 +1,2 @@
+[29-Aug-2017 13:17:35 UTC] PHP Warning:  require(/home/websoulsolutions/public_html/../bootstrap/autoload.php): failed to open stream: No such file or directory in /home/websoulsolutions/public_html/index.php on line 22
+[29-Aug-2017 13:17:35 UTC] PHP Fatal error:  require(): Failed opening required '/home/websoulsolutions/public_html/../bootstrap/autoload.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/websoulsolutions/public_html/index.php on line 22

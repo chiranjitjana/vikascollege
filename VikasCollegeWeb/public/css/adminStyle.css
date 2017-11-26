@@ -1,0 +1,23 @@
+/* ================================================================= */
+
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #375a79;
+}
+
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+    color: #fff;
+}
+
+utton.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    /* background-color: #887c65; */
+    color: #fff;
+}
